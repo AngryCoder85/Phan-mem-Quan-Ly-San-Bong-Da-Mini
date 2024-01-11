@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1CF35F0A-7235-4ED7-B545-3ACD3BD35EAB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>QLiSanBong_Solution</RootNamespace>
+    <AssemblyName>QLiSanBong_Solution</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLL\BoPhanBLL.cs" />
+    <Compile Include="BLL\ChuSoHuuBLL.cs" />
+    <Compile Include="BLL\DichVuBLL.cs" />
+    <Compile Include="BLL\KhachBLL.cs" />
+    <Compile Include="BLL\LoaiSanBLL.cs" />
+    <Compile Include="BLL\NhanVienBLL.cs" />
+    <Compile Include="BLL\QuanLyDatSanBLL.cs" />
+    <Compile Include="BLL\QuanLyTaiSanBLL.cs" />
+    <Compile Include="BLL\SanBLL.cs" />
+    <Compile Include="BLL\TaiSanBLL.cs" />
+    <Compile Include="BLL\ThanhToanDichVuBLL.cs" />
+    <Compile Include="BLL\TKNhanVienBLL.cs" />
+    <Compile Include="DAL\AdminDAL.cs" />
+    <Compile Include="DAL\BoPhanDAL.cs" />
+    <Compile Include="DAL\DataHelper.cs" />
+    <Compile Include="DAL\DichVuDAL.cs" />
+    <Compile Include="DAL\KhachDAL.cs" />
+    <Compile Include="DAL\LoaiSanDAL.cs" />
+    <Compile Include="DAL\NhanVienDAL.cs" />
+    <Compile Include="DAL\QL_NVDAL.cs" />
+    <Compile Include="DAL\QuanLyDatSanDAL.cs" />
+    <Compile Include="DAL\QuanLyTaiSanDAL.cs" />
+    <Compile Include="DAL\SanDAL.cs" />
+    <Compile Include="DAL\TaiSanDAL.cs" />
+    <Compile Include="DAL\ThanhToanDichVuDAL.cs" />
+    <Compile Include="DAL\TKNhanVienDAL.cs" />
+    <Compile Include="DTO\BoPhan.cs" />
+    <Compile Include="DTO\ChuSoHuu.cs" />
+    <Compile Include="DTO\DichVu.cs" />
+    <Compile Include="DTO\Khach.cs" />
+    <Compile Include="DTO\LoaiSan.cs" />
+    <Compile Include="DTO\NhanVien.cs" />
+    <Compile Include="DTO\QLNV.cs" />
+    <Compile Include="DTO\QLTAISAN.cs" />
+    <Compile Include="DTO\QuanLiDatSan.cs" />
+    <Compile Include="DTO\San.cs" />
+    <Compile Include="DTO\TaiSan.cs" />
+    <Compile Include="DTO\ThanhToanDichVu.cs" />
+    <Compile Include="DTO\TKNhanVien.cs" />
+    <Compile Include="GUI\AddCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\AddCustomer.Designer.cs">
+      <DependentUpon>AddCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\AddEmployAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\AddEmployAccount.Designer.cs">
+      <DependentUpon>AddEmployAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\AddEmployInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\AddEmployInfo.Designer.cs">
+      <DependentUpon>AddEmployInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\AdminWorking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\AdminWorking.Designer.cs">
+      <DependentUpon>AdminWorking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\DoanhThuDV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\DoanhThuDV.Designer.cs">
+      <DependentUpon>DoanhThuDV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\EmployeeWorking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\EmployeeWorking.Designer.cs">
+      <DependentUpon>EmployeeWorking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GUI\AddCustomer.resx">
+      <DependentUpon>AddCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\AddEmployAccount.resx">
+      <DependentUpon>AddEmployAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\AddEmployInfo.resx">
+      <DependentUpon>AddEmployInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\AdminWorking.resx">
+      <DependentUpon>AdminWorking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\DoanhThuDV.resx">
+      <DependentUpon>DoanhThuDV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\EmployeeWorking.resx">
+      <DependentUpon>EmployeeWorking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="img\add-user.png" />
+    <Content Include="img\cross.png" />
+    <Content Include="img\diskette.png" />
+    <Content Include="img\edit-calendar.png" />
+    <Content Include="img\football-field.png" />
+    <Content Include="img\key-chain.ico" />
+    <Content Include="img\lock.png" />
+    <Content Include="img\money.png" />
+    <Content Include="img\play-buttton.png" />
+    <Content Include="img\plus.png" />
+    <Content Include="img\power-on.png" />
+    <Content Include="img\programmer.png" />
+    <Content Include="img\redo.png" />
+    <Content Include="img\soccer-ball.ico" />
+    <Content Include="img\unlock.png" />
+    <Content Include="img\user.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
